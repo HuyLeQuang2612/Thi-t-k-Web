@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/*cái này thêm vô cho vui chứ hiện tại đề ko cho rõ id cần có cái j*/ 
+        #name
+        {
+            text-align:left;
+            color:black;
+        }
+        #email
+        {
+            text-align: left;
+            color: black;
+        }
+        #tour
+        {
+            text-align: left;
+        }
+        #date
+        {
+            text-align: left;
+        }
+        #a
+        {
+            align-content: center;
+        }
+        #b
+        {
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Travel seservation form
+    </h1>
+    <h3>
+        * denotes mandotory <!--nghĩa là dấu * là dấu biểu thị bắt buộc phải có id hoặc name-->
+    </h3>
+    <form>
+        <tr>
+            <td>
+                <label id="name">Full name*: <br><input type="text" name="name" size="20" maxlength="20" placeholder="FirstName  LastName"></label><br>
+            </td><!--name tag sẽ được submit to the server còn id tag thì không có submit vào server-->
+        </tr>
+        <tr>
+            <td>
+                <label id="email"><br>Email address*:<br><input type="email" name="email" size="20" maxlength="20" placeholder="Email Address" ></label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label id="tour"><br>Select tour package*:<br><select><option>Japan</option><option>America</option></select></label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label id="date"><br>Arrival date*:<br><input type="date" name="date"></label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label><br>Number of Persons*:<br><input type="tel" size="20"></label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label><br>What would you want to avail ?*<br></label>
+                <input type="checkbox">Boarding<br>
+                <input type="checkbox">Fooding <br>
+                <input type="checkbox">Sight seeing <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label><br>Discout coupon code:<br><input type="text" name="coupon"size="20" maxlength="20" placeholder="UNKNOWN TYPE"></label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label><br>Terms and conditions*:<br></label>
+                <input type="radio" name="term" id="a"> I agree <input type="radio" name="term" id="b"> I disagree <br>
+            </td>
+        </tr>
+        <br><input type="submit" value="complete reservation">
+
+    </form>
+</body>
+</html>

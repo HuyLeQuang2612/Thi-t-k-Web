@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #yes
+        {
+            align-content: center;
+        }
+        #no
+        {
+            align-content: center;
+        }
+    </style>
+</head>
+<body bgcolor="ffffcc">
+    <form>
+    <h1 align="center">
+        Survey Form 
+    </h1>
+    <p>
+        If you are interested in purchasing one or more of our products, before odering please complete some or all ...
+        Thank you very much for your time !
+    </p>
+    <ol>
+        <li>
+            What is your name ? <br>
+            <input type="text" name="ten" size="20" maxlength="20">
+        </li>
+        <li>
+            what is your date of birth ?<br>
+            Month: &ensp;
+            <select size="1"><option value="January">January</option>
+                          <option value="Febuary">Febuary</option>
+                          <option value="March">March</option>
+                          <option value="April">April</option>
+                          <option value="May">May</option>
+                          <option value="June">June</option>
+                          <option value="July">July</option>
+                          <option value="August">August</option>
+                          <option value="September">September</option>
+                          <option value="October">October</option>
+                          <option value="November">November</option>
+                          <option value="December">December</option>
+            </select>
+         Date: &ensp;
+         <select>
+             <option>1</option>
+             <option>2</option>
+             <option>3</option>
+             <option>4</option>
+             <option>5</option>
+             <option>6</option>
+             <option>...</option>
+             <option>31</option>
+         </select>
+         Year: &ensp;
+         <input type="text" size="4" maxlength="4">
+        </li>
+        <li>
+            What is your mailing address ?<br>
+            <textarea rows="4" cols="47" placeholder="Number/P.O.  Box/Route:
+Street/Avenue/Road:
+City:
+State/Zip:"></textarea>
+        </li>
+        <li>
+            What is your Email address ?<br>
+            <input type="email" size="20" maxlength="20" placeholder="@gmail.com"> 
+        </li>
+        <li>
+            Have you viewed our online product catalog ?<br>
+            <input type="radio" name="choice" id="yes">Yes <input type="radio" name="choice" id="no">No
+        </li>
+        <li>
+            If so, what product(s), besides the one you oder...(check all that apply)<br>
+            <input type="checkbox">VCR<br>
+            <input type="checkbox">Big Screen TV<br>
+            <input type="checkbox">Audio Equipment<br>
+            <input type="checkbox">Video Equipment<br>
+            <input type="checkbox">Camera Equipment<br>
+            <input type="checkbox"><input type="text" size="20" maxlength="1000" placeholder="Please list:">
+        </li>
+        <li>
+            Do you have any quenstion, comments or suggestions before proceeding to the Oder form ? <br>
+            <textarea rows="6" cols="47" placeholder="Your input:"></textarea>
+        </li>
+    </ol>
+    <input type="submit" value="Send Form"> <input type="button" value="Clear form">
+
+    </form>
+</body>
+</html>
